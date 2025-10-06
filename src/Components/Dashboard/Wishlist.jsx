@@ -1,13 +1,8 @@
 import { useContext } from "react";
-import {
-  HandleAddToCartContext,
-  HandleAddToFavContext,
-  HandleRemoveFromFavContext,
-} from "../../Root";
+import { HandleAddToCartContext, HandleRemoveFromFavContext } from "../../Root";
 import { ImCancelCircle } from "react-icons/im";
 
 const Wishlist = ({ fav }) => {
-  const handleAddToFav = useContext(HandleAddToFavContext);
   const handleAddToCart = useContext(HandleAddToCartContext);
   const handleRemoveFromFav = useContext(HandleRemoveFromFavContext);
   return (
