@@ -1,0 +1,218 @@
+[
+  {
+    "product_id": "GAD001",
+    "product_title": "Apple iPhone 15 Pro",
+    "product_image": "https://i.ibb.co.com/B5P3Q2P0/iphone-15-pro.png",
+    "category": "Smartphones",
+    "price": 1199.99,
+    "description": "The latest iPhone featuring the A17 Pro chip, titanium frame, and an advanced 48MP camera system.",
+    "specification": [
+      "Display: 6.1-inch Super Retina XDR",
+      "Processor: A17 Pro Chip",
+      "Camera: 48MP + 12MP Dual Rear, 12MP Front",
+      "Storage: 256GB",
+      "Battery: 3274 mAh",
+      "OS: iOS 17"
+    ],
+    "availability": true,
+    "rating": 3.8
+  },
+  {
+    "product_id": "GAD002",
+    "product_title": "Samsung Galaxy S24 Ultra",
+    "product_image": "https://i.ibb.co.com/Kpz5dcS9/samsung-galaxy.jpg",
+    "category": "Smartphones",
+    "price": 1399.0,
+    "description": "Flagship Android smartphone with 200MP camera, S Pen support, and Snapdragon 8 Gen 3 chip.",
+    "specification": [
+      "Display: 6.8-inch QHD+ AMOLED",
+      "Processor: Snapdragon 8 Gen 3",
+      "Camera: 200MP + 12MP + 10MP + 10MP",
+      "Storage: 512GB",
+      "Battery: 5000 mAh",
+      "OS: Android 14"
+    ],
+    "availability": true,
+    "rating": 3.7
+  },
+  {
+    "product_id": "GAD003",
+    "product_title": "Google Pixel 8 Pro",
+    "product_image": "https://i.ibb.co.com/272KxXZG/Google-Pixel-8-Pro-featured-image-packshot-review.jpg",
+    "category": "Smartphones",
+    "price": 999.49,
+    "description": "AI-powered smartphone with Tensor G3 chip, top-tier camera system, and advanced on-device intelligence.",
+    "specification": [
+      "Display: 6.7-inch OLED 120Hz",
+      "Processor: Google Tensor G3",
+      "Camera: 50MP + 48MP + 48MP",
+      "Storage: 256GB",
+      "Battery: 5050 mAh",
+      "OS: Android 14"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "GAD004",
+    "product_title": "OnePlus 12",
+    "product_image": "https://i.ibb.co.com/YY2Dyfd/onplus.jpg",
+    "category": "Smartphones",
+    "price": 849.0,
+    "description": "Performance-driven smartphone with Snapdragon 8 Gen 3, bright AMOLED display, and super-fast charging.",
+    "specification": [
+      "Display: 6.82-inch AMOLED 120Hz",
+      "Processor: Snapdragon 8 Gen 3",
+      "Camera: 50MP + 48MP + 64MP",
+      "Storage: 512GB",
+      "Battery: 5400 mAh, 100W fast charging",
+      "OS: OxygenOS 14 (Android 14)"
+    ],
+    "availability": true,
+    "rating": 5.0
+  },
+  {
+    "product_id": "GAD005",
+    "product_title": "Sony Xperia 1 V",
+    "product_image": "https://i.ibb.co.com/kVHYvXSN/sonyxperia.jpg",
+    "category": "Smartphones",
+    "price": 1299.0,
+    "description": "Professional-grade smartphone for creators with 4K HDR OLED display and advanced imaging capabilities.",
+    "specification": [
+      "Display: 6.5-inch 4K OLED 120Hz",
+      "Processor: Snapdragon 8 Gen 2",
+      "Camera: 48MP + 12MP + 12MP",
+      "Storage: 256GB",
+      "Battery: 5000 mAh",
+      "OS: Android 13"
+    ],
+    "availability": false,
+    "rating": 4.4
+  },
+  {
+    "product_id": "GAD006",
+    "product_title": "ASUS ROG Phone 8",
+    "product_image": "https://i.ibb.co.com/SDgQrTbg/asus-rog-phone-8.jpg",
+    "category": "Smartphones",
+    "price": 1099.0,
+    "description": "Gaming-focused smartphone with 165Hz AMOLED display, AirTriggers, and massive battery.",
+    "specification": [
+      "Display: 6.78-inch AMOLED 165Hz",
+      "Processor: Snapdragon 8 Gen 3",
+      "Camera: 50MP Triple Camera",
+      "Storage: 512GB",
+      "Battery: 6000 mAh, 65W Fast Charge",
+      "OS: Android 14"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "GAD007",
+    "product_title": "Apple MacBook Air M3 (2025)",
+    "product_image": "https://i.ibb.co.com/5gbD1wMM/macbook.png",
+    "category": "Laptops",
+    "price": 1399.99,
+    "description": "Ultra-thin laptop powered by the Apple M3 chip offering incredible performance and battery life.",
+    "specification": [
+      "Display: 13.6-inch Liquid Retina",
+      "Processor: Apple M3",
+      "RAM: 16GB Unified Memory",
+      "Storage: 512GB SSD",
+      "Battery Life: Up to 18 hours",
+      "OS: macOS Sequoia"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "GAD008",
+    "product_title": "Dell XPS 15 (2025)",
+    "product_image": "https://i.ibb.co.com/dJVL32X9/Dell-Diablo-Platinum-v2.jpg",
+    "category": "Laptops",
+    "price": 1899.0,
+    "description": "Powerful Windows laptop with Intel Core Ultra processor and stunning InfinityEdge OLED display.",
+    "specification": [
+      "Display: 15.6-inch 3.5K OLED",
+      "Processor: Intel Core Ultra 9",
+      "RAM: 32GB DDR5",
+      "Storage: 1TB SSD",
+      "GPU: NVIDIA RTX 4070",
+      "OS: Windows 11 Pro"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "GAD009",
+    "product_title": "Razer Blade 16 (2025)",
+    "product_image": "https://i.ibb.co.com/0Rx3k0BT/257474-CES-2025-Razer-Blade-16-ADi-Benedetto-0005.webp",
+    "category": "Laptops",
+    "price": 2499.0,
+    "description": "High-end gaming laptop with dual-mode Mini-LED display and top-tier graphics performance.",
+    "specification": [
+      "Display: 16-inch Dual-Mode Mini-LED",
+      "Processor: Intel Core i9 HX",
+      "RAM: 32GB DDR5",
+      "Storage: 2TB SSD",
+      "GPU: NVIDIA RTX 4090",
+      "OS: Windows 11"
+    ],
+    "availability": false,
+    "rating": 4.6
+  },
+  {
+    "product_id": "GAD010",
+    "product_title": "Apple Watch Ultra 2",
+    "product_image": "https://i.ibb.co.com/svmbQDp6/applewatchultra2.jpg",
+    "category": "Smartwatches",
+    "price": 799.99,
+    "description": "Rugged smartwatch designed for adventure with enhanced GPS, dive depth sensor, and titanium body.",
+    "specification": [
+      "Display: 1.92-inch Retina LTPO OLED",
+      "Processor: S9 SiP",
+      "Battery Life: Up to 36 hours",
+      "Water Resistance: 100m",
+      "Connectivity: GPS + Cellular",
+      "Material: Titanium Case"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "GAD011",
+    "product_title": "Samsung Galaxy Watch 7 Classic",
+    "product_image": "https://i.ibb.co.com/BKqhpbyq/samsungwatch7.jpg",
+    "category": "Smartwatches",
+    "price": 549.0,
+    "description": "Premium smartwatch with rotating bezel, advanced health tracking, and long battery life.",
+    "specification": [
+      "Display: 1.5-inch Super AMOLED",
+      "Processor: Exynos W1000",
+      "Battery Life: Up to 40 hours",
+      "Water Resistance: 5ATM + IP68",
+      "Connectivity: Bluetooth + LTE",
+      "OS: Wear OS 5"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "GAD012",
+    "product_title": "Garmin Fenix 8",
+    "product_image": "https://i.ibb.co.com/mr8sjyYx/garming-Fenix.jpg",
+    "category": "Smartwatches",
+    "price": 999.99,
+    "description": "Premium multisport GPS smartwatch with solar charging and extensive fitness tracking features.",
+    "specification": [
+      "Display: 1.4-inch Sunlight-readable",
+      "Battery Life: Up to 30 days (solar)",
+      "Water Resistance: 10 ATM",
+      "Connectivity: GPS, Bluetooth, ANT+",
+      "Material: Sapphire Crystal Lens",
+      "Sensors: Heart Rate, SpO2, Compass"
+    ],
+    "availability": false,
+    "rating": 4.7
+  }
+]
