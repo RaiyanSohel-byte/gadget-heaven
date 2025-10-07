@@ -2,6 +2,8 @@ import React, { createContext, useState } from "react";
 import Header from "./Components/Header/Header";
 import { Outlet, useLoaderData } from "react-router";
 import Footer from "./Components/Footer/Footer";
+import Swal from "sweetalert2";
+
 export const GadgetsContext = createContext([]);
 export const HandleAddToCartContext = createContext(() => {});
 export const AddToCartContext = createContext([]);
@@ -11,6 +13,8 @@ export const HandleAddToFavContext = createContext(() => {});
 export const IsFavoriteContext = createContext();
 export const AddToFavContext = createContext();
 export const HandleRemoveFromFavContext = createContext(() => {});
+export const SetAddToCartContext = createContext(() => {});
+
 const Root = () => {
   let totalPrice = 0;
   const gadgets = useLoaderData();
@@ -24,17 +28,25 @@ const Root = () => {
     );
     if (!available) {
       setAddToCart([...addToCart, data]);
-
-      alert("added to cart");
+      Swal.fire({
+        title: `${data.product_title} Added To Cart`,
+        icon: "success",
+      });
     } else {
-      alert("already added");
+      Swal.fire({
+        title: `Already Added`,
+        icon: "warning",
+      });
     }
   };
   const handleRemoveFromCart = (data) => {
     setAddToCart(
       addToCart.filter((cart) => cart.product_id !== data.product_id)
     );
-    alert("Removed From Cart");
+    Swal.fire({
+      title: `${data.product_title} Removed From cart`,
+      icon: "error",
+    });
   };
 
   const handleAddToFav = (data) => {
@@ -43,40 +55,51 @@ const Root = () => {
     );
     if (!available) {
       setAddToFav([...addToFav, data]);
-      alert("Added To Wishlist");
+      Swal.fire({
+        title: `${data.product_title} Added To Wishlist`,
+        icon: "success",
+      });
       setIsFavorite(true);
     } else {
-      alert("Already Available");
+      Swal.fire({
+        title: `Already Added`,
+        icon: "warning",
+      });
     }
   };
   const handleRemoveFromFav = (data) => {
     setAddToFav(addToFav.filter((fav) => fav.product_id !== data.product_id));
     setIsFavorite(false);
-    alert("removed from fav");
+    Swal.fire({
+      title: `${data.product_title} Removed From Wishlist`,
+      icon: "error",
+    });
   };
   return (
     <div>
       <Header />
 
-      <HandleRemoveFromFavContext value={handleRemoveFromFav}>
-        <AddToFavContext value={addToFav}>
-          <IsFavoriteContext value={isFavorite}>
-            <HandleAddToFavContext value={handleAddToFav}>
-              <HandleRemoveFromCartContext value={handleRemoveFromCart}>
-                <TotalPriceContext value={totalPrice}>
-                  <AddToCartContext value={addToCart}>
-                    <HandleAddToCartContext value={handleAddToCart}>
-                      <GadgetsContext value={gadgets}>
-                        <Outlet />
-                      </GadgetsContext>
-                    </HandleAddToCartContext>
-                  </AddToCartContext>
-                </TotalPriceContext>
-              </HandleRemoveFromCartContext>
-            </HandleAddToFavContext>
-          </IsFavoriteContext>
-        </AddToFavContext>
-      </HandleRemoveFromFavContext>
+      <SetAddToCartContext value={setAddToCart}>
+        <HandleRemoveFromFavContext value={handleRemoveFromFav}>
+          <AddToFavContext value={addToFav}>
+            <IsFavoriteContext value={isFavorite}>
+              <HandleAddToFavContext value={handleAddToFav}>
+                <HandleRemoveFromCartContext value={handleRemoveFromCart}>
+                  <TotalPriceContext value={totalPrice}>
+                    <AddToCartContext value={addToCart}>
+                      <HandleAddToCartContext value={handleAddToCart}>
+                        <GadgetsContext value={gadgets}>
+                          <Outlet />
+                        </GadgetsContext>
+                      </HandleAddToCartContext>
+                    </AddToCartContext>
+                  </TotalPriceContext>
+                </HandleRemoveFromCartContext>
+              </HandleAddToFavContext>
+            </IsFavoriteContext>
+          </AddToFavContext>
+        </HandleRemoveFromFavContext>
+      </SetAddToCartContext>
 
       <Footer />
     </div>

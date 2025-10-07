@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AddToFavContext } from "../../Root";
 import Wishlist from "./Wishlist";
+import { BrushCleaningIcon } from "lucide-react";
 
 const Wishlists = () => {
   const addToFav = useContext(AddToFavContext);
@@ -18,8 +19,14 @@ const Wishlists = () => {
           ))}
         </div>
       ) : (
-        <h3 className="text-center bg-gray-100 flex items-center justify-center text-3xl lg:text-5xl font-bold min-h-[300px]">
+        <h3 className="text-center bg-gray-100 flex items-center justify-center text-3xl text-[#ff0000] font-semibold min-h-[300px]">
           Your Wishlist Is Empty !!!
+          <BrushCleaningIcon
+            size={32}
+            color="#ff0000"
+            className="ml-3"
+            strokeWidth={2}
+          />
         </h3>
       )}
     </div>

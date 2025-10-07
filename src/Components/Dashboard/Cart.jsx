@@ -13,7 +13,7 @@ const Cart = ({ cart }) => {
           alt=""
         />
       </div>
-      <div>
+      <div className="max-w-[656px] ">
         <h3 className="font-semibold text-[24px] mb-[18px] text-center lg:text-left my-4 lg:my-0">
           {cart.product_title}
         </h3>

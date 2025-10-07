@@ -17,7 +17,10 @@ const Home = () => {
           </p>
         </div>
         <div className="flex justify-center mb-10 lg:mb-[72px]">
-          <NavLink className="btn text-color-main bg-white rounded-[32px]">
+          <NavLink
+            to="/dashboard/cart"
+            className="btn text-color-main bg-white rounded-[32px]"
+          >
             Shop Now
           </NavLink>
         </div>

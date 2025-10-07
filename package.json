@@ -21,6 +21,8 @@
     "react-simple-star-rating": "^5.1.7",
     "react-star-ratings": "^2.3.0",
     "react-tabs": "^6.1.0",
+    "recharts": "^3.2.1",
+    "sweetalert2": "^11.24.0",
     "tailwindcss": "^4.1.14"
   },
   "devDependencies": {
